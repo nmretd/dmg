@@ -14,14 +14,14 @@
                 <input type="number" name="amount" placeholder="Enter amount" required step="0.01">
             </div>
             <div class="form-group">
-                <select name="from_currency">
+                <select title="from_ccy" name="from_currency">
                     {% for currency in rates.keys() %}
                         <option value="{{ currency }}">{{ currency }}</option>
                     {% endfor %}
                 </select>
             </div>
             <div class="form-group">
-                <select name="to_currency">
+                <select title="to_ccy" name="to_currency">
                     {% for currency in rates.keys() %}
                         <option value="{{ currency }}">{{ currency }}</option>
                     {% endfor %}
